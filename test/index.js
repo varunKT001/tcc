@@ -1,5 +1,6 @@
 const testLexer = require('./testLexer');
 const testParser = require('./testParser');
+const testTransformer = require('./testTransformer');
 
 const tests = [
   {
@@ -9,6 +10,10 @@ const tests = [
   {
     name: 'Parser',
     tester: testParser,
+  },
+  {
+    name: 'Transformer',
+    tester: testTransformer,
   },
 ];
 
