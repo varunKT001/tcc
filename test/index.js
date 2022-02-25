@@ -1,19 +1,31 @@
 const testLexer = require('./testLexer');
+const testParser = require('./testParser');
 
-function test(name, fn) {
-  try {
-    fn();
-    console.log(`✅ ${name} test passed`);
-  } catch (error) {
-    console.log(`❌ ${name} test failed`);
-    process.exit(1);
-  }
-}
+const tests = [
+  {
+    name: 'Lexer',
+    tester: testLexer,
+  },
+  {
+    name: 'Parser',
+    tester: testParser,
+  },
+];
 
 function init() {
-  console.log('🚀 Running tests');
-
-  test('Lexer', testLexer);
+  console.log('🚀 Running tests \n');
+  tests.forEach((test, index) => {
+    process.stdout.write(
+      `(${index + 1}/${tests.length}) ${test.name} test running: `
+    );
+    try {
+      test.tester();
+      process.stdout.write('Pass ✅ \n');
+    } catch (error) {
+      process.stdout.write('Fail ❌ \n');
+      process.exit(1);
+    }
+  });
 }
 
 init();
