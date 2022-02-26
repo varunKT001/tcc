@@ -15,6 +15,9 @@ function getOperator(caller) {
     // if caller function is `divide`, return division `/` operator
     case 'divide':
       return '/';
+
+    default:
+      throw new Error(`No matching caller: ${caller}`);
   }
 }
 
