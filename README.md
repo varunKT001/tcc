@@ -28,11 +28,11 @@ It takes your code from `<filename>.tomper` file, compile it, and then displays 
   </tr>
   <tr>
     <td>Multiplication (x)</td>
-    <td align='center'>Coming soon</td>
+    <td align='center'>✅</td>
   </tr>
   <tr>
     <td>Division (/)</td>
-    <td align='center'>Coming soon</td>
+    <td align='center'>✅</td>
   </tr>
 </tbody>
 </table>
@@ -53,12 +53,12 @@ The program has 3 parts:
 #### Caller functions
 
 - Caller functions are the functions representing the type of operation to be performed.
-- Currently there are only two caller functions: `add` and `subtract`.
+- Currently there are only 4 caller functions: `add`, `subtract`, `multiply`, and `divide`.
 - Caller functions are written inside the call expressions:
   `( add ... )`,
   `( subtract ... )`
-
-( Support for other caller functions, `multiply` and `divide`, will be added soon. )
+  `( multiply ... )`
+  `( divide ... )`
 
 #### Parameters
 
@@ -68,12 +68,12 @@ The program has 3 parts:
 
 #### Examples:
 
-| **Input**                              | **Compiled**  | **Output** |
-| -------------------------------------- | ------------- | ---------- |
-| `( add 2 4 )`                          | (2+4)         | 6          |
-| `( subtract 5 3 )`                     | (5-3)         | 2          |
-| `( add 2 ( subtract 5 3 ) )`           | (2+(5-3))     | 4          |
-| `( add ( add 2 4 ) ( subtract 5 3 ) )` | ((2+4)+(5-3)) | 8          |
+| **Input**                                  | **Compiled**    | **Output** |
+| ------------------------------------------ | --------------- | ---------- |
+| `( add 2 4 )`                              | (2+4)           | 6          |
+| `( subtract 5 3 )`                         | (5-3)           | 2          |
+| `( add 2 ( subtract 5 3 ) )`               | (2+(5-3))       | 4          |
+| `( add ( multiply 4 5 ) ( divide 20 4 ) )` | ((4\*5)+(20/4)) | 25         |
 
 ## 🛠 Installation and setup
 

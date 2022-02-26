@@ -7,6 +7,14 @@ function getOperator(caller) {
     // if caller function is `subtract`, return addition `-` operator
     case 'subtract':
       return '-';
+
+    // if caller function is `multiply`, return multiplication `*` operator
+    case 'multiply':
+      return '*';
+
+    // if caller function is `divide`, return division `/` operator
+    case 'divide':
+      return '/';
   }
 }
 
