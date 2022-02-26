@@ -1,6 +1,6 @@
-const WHITE_SPACES = require('./regex/whitespace');
-const NUMBERS = require('./regex/numbers');
-const LETTERS = require('./regex/letters');
+const WHITE_SPACES = require('../regex/whitespace');
+const NUMBERS = require('../regex/numbers');
+const LETTERS = require('../regex/letters');
 
 module.exports = (input) => {
   // The variable `current` acts as cursor pointing to current location of our input string

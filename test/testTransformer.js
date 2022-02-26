@@ -1,4 +1,4 @@
-const transformer = require('../tcc/transformer');
+const transformer = require('../tcc/src/transformer');
 const assert = require('assert/strict');
 
 const input = {

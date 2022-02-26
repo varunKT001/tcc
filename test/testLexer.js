@@ -1,4 +1,4 @@
-const lexer = require('../tcc/lexer');
+const lexer = require('../tcc/src/lexer');
 const assert = require('assert/strict');
 
 const input = '( add 2 (subtract 2 4) )';

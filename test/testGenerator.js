@@ -1,4 +1,4 @@
-const generator = require('../tcc/generator');
+const generator = require('../tcc/src/generator');
 const assert = require('assert/strict');
 
 const input = {

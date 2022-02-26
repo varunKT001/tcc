@@ -1,4 +1,4 @@
-const parser = require('../tcc/parser');
+const parser = require('../tcc/src/parser');
 const assert = require('assert/strict');
 
 const input = [
