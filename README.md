@@ -6,7 +6,7 @@ It takes your code from `<filename>.tomper` file, compile it, and then displays 
 
 ## ✨ Features
 
-- [x] Lexer, parser, transfomer, code generator, and compile, all implemented from scratch.
+- [x] Lexer, parser, transfomer, code generator, and compiler, all implemented from scratch.
 - [x] Compiles code from file of your choice.
 - [x] Support the following operations:
 
